@@ -1,0 +1,139 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "creation": "2024-03-20 09:49:00.721735",
+  "default_view": "List",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "first_name",
+    "last_name",
+    "gender",
+    "date_of_birth",
+    "personal_contact_number",
+    "customer_address",
+    "address",
+    "emergency_contact_number",
+    "email",
+    "column_break_pwqi",
+    "date_of_arrival_av",
+    "departure_date",
+    "purpose_of_visit_to_auroville",
+    "signature",
+    "document_type",
+    "reference_document"
+  ],
+  "fields": [
+    {
+      "fieldname": "first_name",
+      "fieldtype": "Data",
+      "label": "First Name"
+    },
+    {
+      "fieldname": "last_name",
+      "fieldtype": "Data",
+      "label": "Last Name"
+    },
+    {
+      "fieldname": "customer_address",
+      "fieldtype": "Link",
+      "label": "Customer Address",
+      "options": "Address"
+    },
+    {
+      "depends_on": "eval:doc.customer_address",
+      "fieldname": "address",
+      "fieldtype": "Small Text",
+      "label": "Address",
+      "read_only": 1
+    },
+    {
+      "fieldname": "emergency_contact_number",
+      "fieldtype": "Data",
+      "label": "Emergency Contact Number (Family or Friend)"
+    },
+    {
+      "fieldname": "personal_contact_number",
+      "fieldtype": "Data",
+      "label": "Personal Contact Number"
+    },
+    {
+      "fieldname": "email",
+      "fieldtype": "Data",
+      "label": "Email"
+    },
+    {
+      "fieldname": "column_break_pwqi",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "date_of_arrival_av",
+      "fieldtype": "Date",
+      "label": "Date of Arrival In Auroville Guest House/Place"
+    },
+    {
+      "fieldname": "departure_date",
+      "fieldtype": "Date",
+      "label": "Departure Date"
+    },
+    {
+      "fieldname": "document_type",
+      "fieldtype": "Link",
+      "hidden": 1,
+      "label": "Document Type",
+      "options": "DocType"
+    },
+    {
+      "fieldname": "reference_document",
+      "fieldtype": "Dynamic Link",
+      "hidden": 1,
+      "label": "Reference Document",
+      "options": "document_type"
+    },
+    {
+      "fieldname": "gender",
+      "fieldtype": "Select",
+      "label": "Gender",
+      "options": "\nMale\nFemale\nOthers\nRather Not To Say"
+    },
+    {
+      "fieldname": "date_of_birth",
+      "fieldtype": "Date",
+      "label": "Date of Birth"
+    },
+    {
+      "fieldname": "purpose_of_visit_to_auroville",
+      "fieldtype": "Data",
+      "label": "Purpose of Visit to Auroville"
+    },
+    {
+      "fieldname": "signature",
+      "fieldtype": "Signature",
+      "label": "Signature"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2024-03-20 11:55:44.969428",
+  "modified_by": "Administrator",
+  "module": "UnityLuminate",
+  "name": "Arrival Report",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": []
+}

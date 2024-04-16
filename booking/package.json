@@ -1,0 +1,22 @@
+{
+  "name": "booking",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/assets/unityluminate/booking/ && yarn copy-html-entry",
+    "preview": "vite preview",
+    "copy-html-entry": "cp ../unityluminate/public/booking/index.html ../unityluminate/www/booking.html"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.5.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4",
+    "vuetify": "^3.5.15"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.0"
+  }
+}

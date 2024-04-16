@@ -1,0 +1,175 @@
+{
+  "actions": [],
+  "allow_import": 1,
+  "autoname": "BK.#####",
+  "creation": "2024-03-14 23:05:20.892752",
+  "default_view": "List",
+  "doctype": "DocType",
+  "document_type": "Document",
+  "email_append_to": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "details",
+    "title",
+    "customer",
+    "room",
+    "color",
+    "column_break_4",
+    "starts_on",
+    "ends_on",
+    "status",
+    "email_details_tab",
+    "sender_full_name",
+    "sender_email",
+    "subject"
+  ],
+  "fields": [
+    {
+      "fieldname": "details",
+      "fieldtype": "Section Break",
+      "label": "Booking Details",
+      "oldfieldtype": "Section Break"
+    },
+    {
+      "fieldname": "color",
+      "fieldtype": "Color",
+      "label": "Color"
+    },
+    {
+      "fieldname": "column_break_4",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "starts_on",
+      "fieldtype": "Datetime",
+      "label": "Starts on",
+      "reqd": 1
+    },
+    {
+      "fieldname": "ends_on",
+      "fieldtype": "Datetime",
+      "label": "Ends on"
+    },
+    {
+      "default": "Open",
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "in_standard_filter": 1,
+      "label": "Status",
+      "options": "Open\nWaiting\nReserved\nBooked\nCompleted\nClosed\nCancelled"
+    },
+    {
+      "fieldname": "customer",
+      "fieldtype": "Link",
+      "label": "Customer",
+      "options": "Customer"
+    },
+    {
+      "fieldname": "room",
+      "fieldtype": "Link",
+      "label": "Room",
+      "options": "Room"
+    },
+    {
+      "fieldname": "title",
+      "fieldtype": "Data",
+      "hidden": 1,
+      "label": "Title"
+    },
+    {
+      "fieldname": "email_details_tab",
+      "fieldtype": "Tab Break",
+      "label": "Email Details"
+    },
+    {
+      "fieldname": "sender_full_name",
+      "fieldtype": "Data",
+      "label": "Sender",
+      "options": "Contact Email"
+    },
+    {
+      "fieldname": "sender_email",
+      "fieldtype": "Data",
+      "label": "Email",
+      "options": "Email"
+    },
+    {
+      "fieldname": "subject",
+      "fieldtype": "Data",
+      "label": "Subject"
+    }
+  ],
+  "icon": "fa fa-calendar",
+  "links": [],
+  "modified": "2024-03-19 22:12:06.209594",
+  "modified_by": "Administrator",
+  "module": "UnityLuminate",
+  "name": "Booking Details",
+  "naming_rule": "Expression (old style)",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "email": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "import": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sender_field": "sender_email",
+  "sender_name_field": "sender_full_name",
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [
+    {
+      "color": "Orange",
+      "title": "Open"
+    },
+    {
+      "color": "Yellow",
+      "title": "Waiting"
+    },
+    {
+      "color": "Blue",
+      "title": "Reserved"
+    },
+    {
+      "color": "Green",
+      "title": "Booked"
+    },
+    {
+      "color": "Purple",
+      "title": "Completed"
+    },
+    {
+      "color": "Red",
+      "title": "Closed"
+    },
+    {
+      "color": "Gray",
+      "title": "Cancelled"
+    }
+  ],
+  "subject_field": "subject",
+  "title_field": "title",
+  "track_changes": 1,
+  "track_seen": 1,
+  "track_views": 1
+}

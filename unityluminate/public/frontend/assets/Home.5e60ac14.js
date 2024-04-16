@@ -1,0 +1,1 @@
+import{_ as r,l as p,w as e,r as a,o as c,a as o,m as s}from"./vendor.3a8f86e3.js";const l={},i=s("Application Bar");function v(d,f){const t=a("v-app-bar-nav-icon"),n=a("v-app-bar-title"),_=a("v-app-bar");return c(),p(_,{elevation:2},{prepend:e(()=>[o(t)]),default:e(()=>[o(n,null,{default:e(()=>[i]),_:1})]),_:1})}var b=r(l,[["render",v]]);export{b as default};
