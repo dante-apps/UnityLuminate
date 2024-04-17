@@ -2,13 +2,12 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:name1",
+ "autoname": "field:room_name",
  "creation": "2022-02-08 10:41:26.298683",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1",
   "room_name",
   "room_type",
   "column_break_jitq",
@@ -87,18 +86,11 @@
    "fieldtype": "Table",
    "label": "Price",
    "options": "Room Price"
-  },
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Name 1",
-   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-15 15:46:24.305627",
+ "modified": "2024-04-17 17:05:43.774450",
  "modified_by": "Administrator",
  "module": "UnityLuminate",
  "name": "Room",
