@@ -7,6 +7,8 @@ import call from "../../../doppio/libs/controllers/call";
 import socket from "../../../doppio/libs/controllers/socket";
 import Auth from "../../../doppio/libs/controllers/auth";
 import "vuetify/styles";
+import "@mdi/font/css/materialdesignicons.css";
+
 import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";

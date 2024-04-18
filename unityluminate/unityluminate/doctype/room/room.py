@@ -17,6 +17,9 @@ def create_room(room):
     doc.room1 = room.get("room_name")
     doc.room_type = room.get("room_type")
     doc.status = room.get("status")
+    doc.single_price = room.get("single_price")
+    doc.double_price = room.get("double_price")
+    doc.room_description = room.get("room_description")
     doc.save()
 
     return doc.name
@@ -31,7 +34,10 @@ def get_room_list():
 			.select(
 				room.room_name,
 				room.room_type,
-				room.status
+				room.status,
+                room.single_price,
+                room.double_price,
+                room.room_description
 			)
 	)
     
