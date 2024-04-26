@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import authRoutes from "./auth";
-import { Home, RoomView, Billing, Calendar } from "@/views";
+import { Home, RoomView, Billing, Calendar, Guests, Booking } from "@/views";
 import DefaultLayout from "../layouts/DefaultLayout.vue";
+// import Guests from "../views/Guests.vue";
+// import Booking from "../views/Booking.vue";
 const routes = [
   {
     path: "/",
@@ -44,6 +46,28 @@ const routes = [
         path: "",
         name: "Billing",
         component: Billing,
+      },
+    ],
+  },
+  {
+    path: "/guests",
+    component: DefaultLayout,
+    children: [
+      {
+        path: "",
+        name: "Guests",
+        component: Guests,
+      },
+    ],
+  },
+  {
+    path: "/booking",
+    component: DefaultLayout,
+    children: [
+      {
+        path: "",
+        name: "Booking",
+        component: Booking,
       },
     ],
   },

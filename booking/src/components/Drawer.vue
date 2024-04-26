@@ -2,7 +2,7 @@
   <v-navigation-drawer
     expand-on-hover
     rail
-    style="background-color: #8cd5e4"
+    style="background-color: #3498db"
     class="flex-grow-0 flex-shrink-0"
   >
     <!-- User info section -->
@@ -35,7 +35,7 @@
             <v-icon class="calendar-icon">
               <img src="@/icons/calendar.png" alt="Calendar" />
             </v-icon>
-            <v-list-item-title class="shared-text font-weight-bold">
+            <v-list-item-title class="calendar-text font-weight-bold">
               Calendar
             </v-list-item-title>
           </v-layout>
@@ -49,6 +49,30 @@
             </v-icon>
             <v-list-item-title class="billing-text font-weight-bold">
               Billing
+            </v-list-item-title>
+          </v-layout>
+        </v-list-item>
+      </router-link>
+      <router-link to="/guests">
+        <v-list-item value="guests">
+          <v-layout align-center>
+            <v-icon class="guests-icon">
+              <img src="@/icons/guests.png" alt="guests" />
+            </v-icon>
+            <v-list-item-title class="guests-text font-weight-bold">
+              Guests
+            </v-list-item-title>
+          </v-layout>
+        </v-list-item>
+      </router-link>
+      <router-link to="/booking">
+        <v-list-item value="booking">
+          <v-layout align-center>
+            <v-icon class="booking-icon">
+              <img src="@/icons/booking.png" alt="booking" />
+            </v-icon>
+            <v-list-item-title class="booking-text font-weight-bold">
+              Booking
             </v-list-item-title>
           </v-layout>
         </v-list-item>
@@ -76,7 +100,7 @@
     <v-dialog v-model="logoutDialog" max-width="500px">
       <v-card>
         <v-card-title>Logout Confirmation</v-card-title>
-        <v-card-text>Are you sure you wanna logout?</v-card-text>
+        <v-card-text>Are you sure you want to logout?</v-card-text>
         <v-card-actions>
           <v-btn color="primary" @click="$auth.logout()">Yes</v-btn>
           <v-btn @click="logoutDialog = false">Cancel</v-btn>
@@ -113,7 +137,9 @@ export default {
 
 .my-files-icon img,
 .calendar-icon img,
-.billing-icon img {
+.billing-icon img,
+.guests-icon img,
+.booking-icon img {
   width: 24px;
   height: 24px;
 }
@@ -124,8 +150,10 @@ export default {
 }
 
 .rooms-text,
-.shared-text,
+.calendar-text,
 .billing-text,
+.guests-text,
+.booking-text,
 .logout-text {
   margin-left: 1rem;
   line-height: 1.5rem;
@@ -134,17 +162,34 @@ export default {
 
 @media (min-width: 768px) {
   .rooms-text,
-  .shared-text,
+  .calendar-text,
   .billing-text,
+  .guests-text,
+  .booking-text,
   .logout-text {
     font-size: 1.2rem;
   }
 }
 
+.v-layout {
+  align-items: center; /* Align items vertically */
+}
+
 .logout-button {
-  margin-top: 620px;
+  margin-top: 16px; /* Adjust as needed */
   margin-bottom: 16px;
   width: 100%;
   justify-content: start;
+}
+
+a {
+  text-decoration: none;
+  color: #000000; /* Change the color of the links */
+  font-weight: bold; /* Add bold style */
+  transition: color 0.3s; /* Add a smooth color transition */
+}
+
+a:hover {
+  color: #d8cb52; /* Change the color on hover */
 }
 </style>

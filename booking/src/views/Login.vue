@@ -15,7 +15,7 @@
       <template #title>
         <div class="text-h6 font-emphasis-bold text-center mb-4">Log In to</div>
         <div class="text-h6 text-weight-emphasis text-center">
-          Afsanah Guest House
+          GreenBox Guest House
         </div>
       </template>
       <div class="text-subtitle-1 text-medium-emphasis">Account</div>

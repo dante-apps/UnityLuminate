@@ -3,7 +3,8 @@ import { Drawer } from "@/components";
 </script>
 
 <template>
-  <v-app>
+  <v-app id="app" style="background-color: #ecf0f1">
+    <!-- Use a Vuetify material color -->
     <v-main>
       <Drawer></Drawer>
       <div>

@@ -1,0 +1,46 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"UZcmNJKVLS\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">GreenBox Guest House</span>\",\"col\":12}},{\"id\":\"wMvZJ_f6Gs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Guest List\",\"col\":3}},{\"id\":\"WecQ5GZx0l\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rooms\",\"col\":3}}]",
+ "creation": "2024-04-18 20:56:18.996923",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-review-points",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "GreenBox Guest House",
+ "links": [],
+ "modified": "2024-04-24 16:28:03.703956",
+ "modified_by": "Administrator",
+ "module": "UnityLuminate",
+ "name": "GreenBox Guest House",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Guest List",
+   "link_to": "Guests",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Rooms",
+   "link_to": "Room",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "GreenBox Guest House"
+}
