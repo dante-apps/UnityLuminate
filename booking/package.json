@@ -10,12 +10,7 @@
     "copy-html-entry": "cp ../unityluminate/public/booking/index.html ../unityluminate/www/booking.html"
   },
   "dependencies": {
-    "@syncfusion/ej2-base": "^25.1.35",
-    "@syncfusion/ej2-vue-schedule": "^25.1.39",
-    "axios": "^1.6.8",
     "date-fns": "^3.6.0",
-    "daypilot-pro-vue": "https://npm.daypilot.org/daypilot-pro-vue/trial/2023.2.5565.tar.gz",
-    "frappe-ui": "^0.1.51",
     "socket.io-client": "^4.5.1",
     "uuid": "^9.0.1",
     "vue": "^3.4.21",
